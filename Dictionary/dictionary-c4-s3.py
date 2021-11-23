@@ -27,7 +27,7 @@
 # 3
 
 def getMax(arr):
-    result = 0
+    result = arr[0]
     for i in arr:
         if i > result:
             result = i
@@ -39,7 +39,13 @@ def getMin(arr):
         if result > i:
             result=i
     return result
-
+# # or 
+# def getMin(arr):
+#     minumum = arr[0]
+#     for i in arr:
+#         if i < minumum:
+#             minumum = i
+#     return minumum
 
 def getAvg(arr):
     result = getMax(arr) + getMin(arr)
